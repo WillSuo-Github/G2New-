@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2208FF54-6118-4F48-9579-F54EF1628C44</string>
+	<key>IDESourceControlProjectName</key>
+	<string>G2TestDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>929A827213F0B2D3869E4889694C4DA7674F21D5</key>
+		<string>https://git.coding.net/zuihuodeman/G2.git</string>
+		<key>e4e7fc3b-b889-4afd-84ef-aa0c31ffd40a++9193</key>
+		<string>https://git.coding.net/zuihuodeman/G2.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>G2TestDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>929A827213F0B2D3869E4889694C4DA7674F21D5</key>
+		<string>../../..</string>
+		<key>e4e7fc3b-b889-4afd-84ef-aa0c31ffd40a++9193</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://git.coding.net/zuihuodeman/G2.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>e4e7fc3b-b889-4afd-84ef-aa0c31ffd40a++9193</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>929A827213F0B2D3869E4889694C4DA7674F21D5</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>e4e7fc3b-b889-4afd-84ef-aa0c31ffd40a++9193</string>
+			<key>IDESourceControlWCCName</key>
+			<string>G2</string>
+		</dict>
+	</array>
+</dict>
+</plist>

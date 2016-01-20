@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--Prompt Swiping Card View Controller-->
+        <scene sceneID="UvO-ts-4Ua">
+            <objects>
+                <viewController storyboardIdentifier="eeeee" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nQq-Oa-rBG" customClass="PromptSwipingCardViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IXR-dj-nPa"/>
+                        <viewControllerLayoutGuide type="bottom" id="fgr-b1-Jp9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="94P-2V-tE8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请插入&quot;芯片卡&quot;或者刷&quot;磁条卡&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fd3-hG-C6Q">
+                                <rect key="frame" x="150" y="110" width="300" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="H3K-zZ-ERo"/>
+                                    <constraint firstAttribute="width" constant="300" id="tVC-M2-Cpr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="刷卡提示" translatesAutoresizingMaskIntoConstraints="NO" id="DlM-ND-ERZ">
+                                <rect key="frame" x="0.0" y="191" width="600" height="400"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="Hgo-6Z-eBM"/>
+                                    <constraint firstAttribute="width" constant="600" id="dei-Q1-7hT"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Fd3-hG-C6Q" firstAttribute="centerX" secondItem="94P-2V-tE8" secondAttribute="centerX" id="BLt-5K-JOG"/>
+                            <constraint firstItem="DlM-ND-ERZ" firstAttribute="centerX" secondItem="94P-2V-tE8" secondAttribute="centerX" id="BQa-jw-CGA"/>
+                            <constraint firstItem="Fd3-hG-C6Q" firstAttribute="top" secondItem="IXR-dj-nPa" secondAttribute="bottom" constant="90" id="kM2-Ko-hMD"/>
+                            <constraint firstItem="DlM-ND-ERZ" firstAttribute="top" secondItem="Fd3-hG-C6Q" secondAttribute="bottom" constant="60" id="pLH-69-v0Z"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="McL-mY-jFj" kind="push" identifier="next" id="Kfs-6Z-2zc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rUz-6m-oCi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5" y="407"/>
+        </scene>
+        <!--Prompt Confirming Card No View Controller-->
+        <scene sceneID="T0V-lM-N2B">
+            <objects>
+                <viewController id="McL-mY-jFj" customClass="PromptConfirmingCardNoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mtb-i5-1D9"/>
+                        <viewControllerLayoutGuide type="bottom" id="fJ8-2q-tf7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fQ8-fR-Bib">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="提示顾客确认卡号" translatesAutoresizingMaskIntoConstraints="NO" id="OZp-wF-7zc">
+                                <rect key="frame" x="50" y="110" width="500" height="300"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="500" id="SNQ-z8-vb0"/>
+                                    <constraint firstAttribute="height" constant="300" id="uDL-LO-88W"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="66666*************66666" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SaM-KH-SMs">
+                                <rect key="frame" x="150" y="329" width="300" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Efe-VF-ata"/>
+                                    <constraint firstAttribute="height" constant="21" id="GeG-1U-qMg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请提示顾客确认消费卡号，并按下键盘上的“确认”键" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGj-P3-ESy">
+                                <rect key="frame" x="50" y="470" width="500" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="500" id="iiE-co-7J3"/>
+                                    <constraint firstAttribute="height" constant="30" id="kBI-DO-T95"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TGj-P3-ESy" firstAttribute="top" secondItem="SaM-KH-SMs" secondAttribute="bottom" constant="120" id="2nn-rY-gU6"/>
+                            <constraint firstItem="OZp-wF-7zc" firstAttribute="centerX" secondItem="fQ8-fR-Bib" secondAttribute="centerX" id="M9m-IT-2wT"/>
+                            <constraint firstItem="TGj-P3-ESy" firstAttribute="centerX" secondItem="fQ8-fR-Bib" secondAttribute="centerX" id="NvR-XF-AfP"/>
+                            <constraint firstItem="SaM-KH-SMs" firstAttribute="centerX" secondItem="fQ8-fR-Bib" secondAttribute="centerX" id="R2g-zJ-JT3"/>
+                            <constraint firstItem="TGj-P3-ESy" firstAttribute="top" secondItem="OZp-wF-7zc" secondAttribute="bottom" constant="60" id="pKd-b9-CJD"/>
+                            <constraint firstItem="OZp-wF-7zc" firstAttribute="top" secondItem="Mtb-i5-1D9" secondAttribute="bottom" constant="90" id="wdF-xU-MQw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3gy-Bx-pbw"/>
+                    <modalPageSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="cardLabel" destination="SaM-KH-SMs" id="ogh-3d-Mbc"/>
+                        <segue destination="3Md-zP-iD7" kind="push" identifier="next" id="gUt-Q7-Mof"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uWI-KD-ePm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="766" y="407"/>
+        </scene>
+        <!--Prompt Confirming Password View Controller-->
+        <scene sceneID="Rk1-pm-K6D">
+            <objects>
+                <viewController id="3Md-zP-iD7" customClass="PromptConfirmingPasswordViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Z4N-VA-dAk"/>
+                        <viewControllerLayoutGuide type="bottom" id="hfv-Ky-SW3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nHW-Dx-jVU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请提示顾客在键盘上输入银行卡密码" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHn-Po-dIe">
+                                <rect key="frame" x="150" y="110" width="300" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="1uL-C9-ugq"/>
+                                    <constraint firstAttribute="height" constant="21" id="t1F-Ia-cGw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="输密提示" translatesAutoresizingMaskIntoConstraints="NO" id="fId-zu-81a">
+                                <rect key="frame" x="0.0" y="191" width="600" height="400"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="6K8-tU-nNT"/>
+                                    <constraint firstAttribute="width" constant="600" id="lyt-lJ-Rlt"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aHn-Po-dIe" firstAttribute="centerX" secondItem="nHW-Dx-jVU" secondAttribute="centerX" id="6FF-GE-4W6"/>
+                            <constraint firstItem="aHn-Po-dIe" firstAttribute="top" secondItem="Z4N-VA-dAk" secondAttribute="bottom" constant="90" id="GHI-Ph-9p5"/>
+                            <constraint firstItem="fId-zu-81a" firstAttribute="centerX" secondItem="nHW-Dx-jVU" secondAttribute="centerX" id="cSj-bU-bY5"/>
+                            <constraint firstItem="fId-zu-81a" firstAttribute="top" secondItem="aHn-Po-dIe" secondAttribute="bottom" constant="60" id="p0K-QL-7r3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qox-2j-goD"/>
+                    <connections>
+                        <segue destination="CcJ-h2-YOY" kind="push" identifier="next" id="eff-DB-iz6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OwP-U9-GhJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1518" y="407"/>
+        </scene>
+        <!--Prompt Signing View Controller-->
+        <scene sceneID="a55-F8-eZJ">
+            <objects>
+                <viewController id="CcJ-h2-YOY" customClass="PromptSigningViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eXZ-1g-oEC"/>
+                        <viewControllerLayoutGuide type="bottom" id="hIi-gj-BKA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qZy-Me-Tjc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请提示顾客在客显屏幕签名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GGZ-zO-QJw">
+                                <rect key="frame" x="150" y="110" width="300" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="E7o-sJ-EEK"/>
+                                    <constraint firstAttribute="height" constant="21" id="dru-w4-xew"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="提示顾客签名3" translatesAutoresizingMaskIntoConstraints="NO" id="qJO-aN-08k">
+                                <rect key="frame" x="0.0" y="191" width="600" height="400"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="HSr-vk-1oy"/>
+                                    <constraint firstAttribute="height" constant="400" id="kf8-4t-FrL"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qJO-aN-08k" firstAttribute="top" secondItem="GGZ-zO-QJw" secondAttribute="bottom" constant="60" id="S83-LK-4JN"/>
+                            <constraint firstItem="qJO-aN-08k" firstAttribute="centerX" secondItem="qZy-Me-Tjc" secondAttribute="centerX" id="V45-e4-tAC"/>
+                            <constraint firstItem="GGZ-zO-QJw" firstAttribute="top" secondItem="eXZ-1g-oEC" secondAttribute="bottom" constant="90" id="oii-TS-eEk"/>
+                            <constraint firstItem="GGZ-zO-QJw" firstAttribute="centerX" secondItem="qZy-Me-Tjc" secondAttribute="centerX" id="pbB-bl-ia2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="b8j-2z-ram"/>
+                    <connections>
+                        <segue destination="YUa-qD-4wc" kind="push" identifier="next" id="10Z-Fz-VIc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M38-EX-ND2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2248" y="407"/>
+        </scene>
+        <!--Prompt Uploading Trade View Controller-->
+        <scene sceneID="NN8-G5-1Fa">
+            <objects>
+                <viewController id="YUa-qD-4wc" customClass="PromptUploadingTradeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="biK-FE-TUP"/>
+                        <viewControllerLayoutGuide type="bottom" id="nNR-Hi-lBF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8uo-iw-OAx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="交易上送中..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osJ-og-7Fn">
+                                <rect key="frame" x="150" y="110" width="300" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="CV2-OV-UPt"/>
+                                    <constraint firstAttribute="height" constant="21" id="LRS-Tf-NHx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="交易上送" translatesAutoresizingMaskIntoConstraints="NO" id="rAY-SK-tb1">
+                                <rect key="frame" x="0.0" y="191" width="600" height="400"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="Iwd-Lh-ucY"/>
+                                    <constraint firstAttribute="width" constant="600" id="im2-Gz-6ud"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="osJ-og-7Fn" firstAttribute="top" secondItem="biK-FE-TUP" secondAttribute="bottom" constant="90" id="Lkx-cV-NoN"/>
+                            <constraint firstItem="rAY-SK-tb1" firstAttribute="centerX" secondItem="8uo-iw-OAx" secondAttribute="centerX" id="SEG-Av-szV"/>
+                            <constraint firstItem="rAY-SK-tb1" firstAttribute="top" secondItem="osJ-og-7Fn" secondAttribute="bottom" constant="60" id="VU1-0h-Njt"/>
+                            <constraint firstItem="osJ-og-7Fn" firstAttribute="centerX" secondItem="8uo-iw-OAx" secondAttribute="centerX" id="acf-uI-FQe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Tmm-BT-5NS"/>
+                    <connections>
+                        <segue destination="55T-FG-SZw" kind="push" identifier="next" id="hYp-BE-1E9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r4W-iL-wdB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3050" y="407"/>
+        </scene>
+        <!--Prompt Printing Note View Controller-->
+        <scene sceneID="cx5-1f-kYb">
+            <objects>
+                <viewController id="55T-FG-SZw" customClass="PromptPrintingNoteViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3eh-i2-0gZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ei3-Zd-YWC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gs1-B0-Kg1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="交易成功，正在打印签购单...." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMx-ie-dQj">
+                                <rect key="frame" x="150" y="110" width="300" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Br4-gd-MIg"/>
+                                    <constraint firstAttribute="width" constant="300" id="X2J-Jr-tT9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="打印签购单" translatesAutoresizingMaskIntoConstraints="NO" id="Gp7-aD-c72">
+                                <rect key="frame" x="0.0" y="191" width="600" height="400"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="ccg-gN-hGX"/>
+                                    <constraint firstAttribute="width" constant="600" id="ubX-cT-OBM"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QMx-ie-dQj" firstAttribute="top" secondItem="3eh-i2-0gZ" secondAttribute="bottom" constant="90" id="A2C-K3-kac"/>
+                            <constraint firstItem="QMx-ie-dQj" firstAttribute="centerX" secondItem="gs1-B0-Kg1" secondAttribute="centerX" id="OYY-Oo-SG5"/>
+                            <constraint firstItem="Gp7-aD-c72" firstAttribute="top" secondItem="QMx-ie-dQj" secondAttribute="bottom" constant="60" id="Zm8-qO-fGD"/>
+                            <constraint firstItem="Gp7-aD-c72" firstAttribute="centerX" secondItem="gs1-B0-Kg1" secondAttribute="centerX" id="xBq-NO-WVk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="XhD-4x-fnY"/>
+                    <connections>
+                        <segue destination="jFa-AG-sG1" kind="push" identifier="next" id="I7b-t8-Oec"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wtj-QV-2dM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3845" y="407"/>
+        </scene>
+        <!--Prompt Saving Note View Controller-->
+        <scene sceneID="Cyd-N5-fcZ">
+            <objects>
+                <viewController id="jFa-AG-sG1" customClass="PromptSavingNoteViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8zF-ro-WEb"/>
+                        <viewControllerLayoutGuide type="bottom" id="F6w-Xf-hCA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aq2-oB-dZ9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="签购单打印成功，请您保留好存根" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dS6-pl-zTP">
+                                <rect key="frame" x="150" y="110" width="300" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="qcq-Sl-B8T"/>
+                                    <constraint firstAttribute="height" constant="21" id="txi-UI-NWD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="打印成功" translatesAutoresizingMaskIntoConstraints="NO" id="F3a-lb-XA3">
+                                <rect key="frame" x="0.0" y="191" width="600" height="400"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="YVL-kn-lBy"/>
+                                    <constraint firstAttribute="height" constant="400" id="aHo-er-9rV"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dS6-pl-zTP" firstAttribute="top" secondItem="8zF-ro-WEb" secondAttribute="bottom" constant="90" id="9Tv-96-Gcn"/>
+                            <constraint firstItem="F3a-lb-XA3" firstAttribute="centerX" secondItem="aq2-oB-dZ9" secondAttribute="centerX" id="CYD-aY-Eqn"/>
+                            <constraint firstItem="dS6-pl-zTP" firstAttribute="centerX" secondItem="aq2-oB-dZ9" secondAttribute="centerX" id="cGV-gU-N75"/>
+                            <constraint firstItem="F3a-lb-XA3" firstAttribute="top" secondItem="dS6-pl-zTP" secondAttribute="bottom" constant="60" id="rEK-i0-zIt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="eGW-Zs-wnV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mof-vq-AoT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4624" y="407"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="交易上送" width="660" height="445"/>
+        <image name="刷卡提示" width="1000" height="500"/>
+        <image name="打印成功" width="660" height="445"/>
+        <image name="打印签购单" width="660" height="445"/>
+        <image name="提示顾客确认卡号" width="649" height="389"/>
+        <image name="提示顾客签名3" width="1464" height="1353"/>
+        <image name="输密提示" width="540" height="117"/>
+    </resources>
+</document>

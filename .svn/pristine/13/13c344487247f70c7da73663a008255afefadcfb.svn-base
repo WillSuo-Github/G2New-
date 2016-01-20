@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JewelryLoginViewController">
+            <connections>
+                <outlet property="LoginView" destination="Vx0-ee-rft" id="jXj-1V-26B"/>
+                <outlet property="denglu" destination="W9Q-Yw-xSi" id="OXa-nJ-4WO"/>
+                <outlet property="juhua" destination="DdX-nx-g7q" id="hdy-9t-PnR"/>
+                <outlet property="mima" destination="Tcw-YH-DdR" id="kI0-da-HH1"/>
+                <outlet property="mimaView" destination="Hgy-v2-ipD" id="5Dq-7f-2rw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="zhanghao" destination="F4w-6w-35z" id="Nj3-cF-9k8"/>
+                <outlet property="zhanghaoView" destination="ga0-zj-DPu" id="s8N-F0-mWR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="zb_m2" translatesAutoresizingMaskIntoConstraints="NO" id="WIV-vQ-ZHb">
+                    <rect key="frame" x="0.0" y="297" width="1024" height="471"/>
+                    <animations/>
+                </imageView>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vx0-ee-rft">
+                    <rect key="frame" x="336" y="178" width="352" height="412"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="zb_logo" translatesAutoresizingMaskIntoConstraints="NO" id="hve-hD-x8h">
+                            <rect key="frame" x="114" y="22" width="125" height="165"/>
+                            <animations/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9Q-Yw-xSi">
+                            <rect key="frame" x="16" y="358" width="320" height="60"/>
+                            <animations/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="登 录">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="DdX-nx-g7q" userLabel="菊花">
+                            <rect key="frame" x="121" y="377" width="20" height="20"/>
+                            <animations/>
+                        </activityIndicatorView>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ga0-zj-DPu">
+                            <rect key="frame" x="16" y="242" width="320" height="51"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="01" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F4w-6w-35z">
+                                    <rect key="frame" x="56" y="8" width="245" height="35"/>
+                                    <animations/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="zb_user" translatesAutoresizingMaskIntoConstraints="NO" id="0Yj-1e-Zdi">
+                                    <rect key="frame" x="16" y="12" width="20" height="27"/>
+                                    <animations/>
+                                </imageView>
+                            </subviews>
+                            <animations/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hgy-v2-ipD">
+                            <rect key="frame" x="16" y="292" width="320" height="51"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="01" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tcw-YH-DdR">
+                                    <rect key="frame" x="55" y="8" width="236" height="33"/>
+                                    <animations/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                </textField>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="zb_lock" translatesAutoresizingMaskIntoConstraints="NO" id="jF6-RL-vDc">
+                                    <rect key="frame" x="16" y="12" width="20" height="26"/>
+                                    <animations/>
+                                </imageView>
+                            </subviews>
+                            <animations/>
+                        </view>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="zb_lock" width="38" height="52"/>
+        <image name="zb_logo" width="270" height="370"/>
+        <image name="zb_m2" width="2048" height="1084"/>
+        <image name="zb_user" width="38" height="52"/>
+    </resources>
+</document>

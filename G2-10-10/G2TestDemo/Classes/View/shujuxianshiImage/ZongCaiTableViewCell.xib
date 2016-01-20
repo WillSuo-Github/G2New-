@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9046" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="43" id="KGk-i7-Jjw" customClass="ZongCaiTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="58" height="43"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="58" height="42"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IcG-vD-8OT">
+                        <rect key="frame" x="-8" y="40" width="74" height="1"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.31" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="2SH-Wp-x4L"/>
+                            <constraint firstAttribute="width" constant="74" id="Bwk-cl-1bb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="IcG-vD-8OT" secondAttribute="trailing" constant="-16" id="dEe-rL-H1l"/>
+                    <constraint firstItem="IcG-vD-8OT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-16" id="jqI-Ou-loe"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="IcG-vD-8OT" secondAttribute="bottom" constant="-7" id="ykE-8d-dnE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <point key="canvasLocation" x="202" y="429.5"/>
+        </tableViewCell>
+    </objects>
+</document>

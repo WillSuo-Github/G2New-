@@ -1,0 +1,125 @@
+//
+//  JYProductManager.m
+//  G2TestDemo
+//
+//  Created by NDlan on 7/12/15.
+//  Copyright © 2015年 ws. All rights reserved.
+//
+
+#import "JYProductManager.h"
+#import "NDLCoreBusincessHeader.h"
+#import "JYModelConfigureHeader.h"
+#import "JYCategoryIDModel.h"
+#import "HttpTool.h"
+#import "MJExtension.h"
+
+#import "JYPayToolType.h"
+#import "JYProductInfoModel.h"
+
+
+
+#import "JYProductInfoModel.h"
+#import "JYOrderCollectionViewCell.h"
+
+@implementation JYProductManager
+
++(JYProductManager *) productManager{
+    static JYProductManager *instance;
+    if (!instance) {
+        instance=[[super allocWithZone:nil]init];
+    }
+    return instance;
+}
+
+- (instancetype)init {
+    if ((self = [super init]) != nil) {
+        //
+    }
+    return self;
+}
+
+
+//打烊接口
+//http://localhost:8080/jewelry-main/productInfo/iosProInfo?returnJson=true&barCode=1
+-(void)closingWithBarCode:(NSString *)barCode block:(NDlHttpResponse)block{
+    NSString *urlStr = [NSString stringWithFormat:@"/jewelry-main/productInfo/iosProInfo?returnJson=true&barCode=%@",
+                        barCode];
+    HttpTool * http=[HttpTool httpWithURL:NDL_JY_URL isErrorTemplate:YES];
+    
+    [http postWithForm:urlStr parameters:nil modelClass:[JYPayToolType class]
+               keyPath:@"objectzJson" block:^(id responseObject, ErrorMessage *bsErrorMessage) {
+                   NSLog(@"responseObject:%@",responseObject);
+                   //服务器返回结构
+                   if (responseObject) {
+                       if (block) {
+                           block(@"0",nil);
+                       }
+                   }
+               }];
+}
+
+//iosPro/iosProInfo?returnJson=true&barCode=1
+//根据条码查询商品信息
+-(void)obtainProduceInfoWith:(NSString *)barCode block:(NDlHttpResponse)block{
+    NSString *urlStr = [NSString stringWithFormat:@"/jewelry-main/iosPro/iosProInfo?returnJson=true&barCode=%@",
+                        barCode];
+    HttpTool * http=[HttpTool httpWithURL:NDL_JY_URL isErrorTemplate:YES];
+    
+    [http postWithForm:urlStr parameters:nil modelClass:[JYProductInfoModel class]
+               keyPath:@"objectzJson" block:^(id responseObject, ErrorMessage *bsErrorMessage) {
+                   NSLog(@"responseObject:%@",responseObject);
+                   //服务器返回结构
+                   if (responseObject) {
+                       if (block) {
+                           block(responseObject,nil);
+                       }
+                   }
+            
+                
+               }];
+
+}
+
+///http://localhost:8080/jewelry-main/productInfo/iosList?returnJson=true
+//商品页面信息
+-(void)obtainProduceInfoWithDic:(NSDictionary*)queryDic block:(NDlHttpResponse)block{
+    NSString *urlStr = [NSString stringWithFormat:@"%@/jewelry-main/iosPro/iosList?returnJson=true",NDL_JY_URL];
+    HttpTool * http=[HttpTool httpWithURL:NDL_JY_URL isErrorTemplate:YES];
+    
+    [http postWithForm:urlStr parameters:queryDic modelClass:[JYProductInfoModel class]
+               keyPath:@"content" block:^(id responseObject, ErrorMessage *bsErrorMessage) {
+                   NSLog(@"responseObject:%@",responseObject);
+                   //服务器返回结构
+                   if (responseObject) {
+                       if (block) {
+                           block(responseObject,nil);
+                       }
+                   }
+    
+               }];
+
+}
+//商品页面类别
+-(void)obtainProduceInfoCateWithDic:(NSDictionary*)queryDic block:(NDlHttpResponse)block{
+    NSString *urlStr = [NSString stringWithFormat:@"%@/jewelry-main/iosPro/iosCatagory?returnJson=true",NDL_JY_URL];
+    [HttpTool POST:urlStr parameters:nil success:^(id responseObject) {
+        NSArray *arr = responseObject[@"categoryList"];
+        //添加全部对象
+        JYCategoryIDModel *modelAll = [[JYCategoryIDModel alloc]init];
+        modelAll.categoryId = @"";
+        modelAll.categoryName = @"全部";
+        NSMutableArray *cateAll = [NSMutableArray array];
+        [cateAll addObject:modelAll];
+        [cateAll addObjectsFromArray:[JYCategoryIDModel objectArrayWithKeyValuesArray:arr]];
+        if (responseObject) {
+            if (block) {
+                block(cateAll,nil);
+            }
+        }
+    } failure:^(NSError *error) {
+        
+    }];
+    
+    
+}
+@end

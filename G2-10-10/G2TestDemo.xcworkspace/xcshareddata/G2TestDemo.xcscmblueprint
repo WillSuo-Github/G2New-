@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "cb36b4dd-5dc2-4f14-a814-598024e87300++2902",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "cb36b4dd-5dc2-4f14-a814-598024e87300++2902" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "cb36b4dd-5dc2-4f14-a814-598024e87300++2902" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "611DD47B-9AA4-4E52-8033-25D7C6FEAB9F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "cb36b4dd-5dc2-4f14-a814-598024e87300++2902" : "G2New\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "G2TestDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "G2-10-10\/G2TestDemo.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/122.112.29.15:13690\/java",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "cb36b4dd-5dc2-4f14-a814-598024e87300++2902"
+    }
+  ]
+}

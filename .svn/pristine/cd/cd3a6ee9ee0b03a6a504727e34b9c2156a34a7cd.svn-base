@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PromptConsumerSuccessViewController">
+            <connections>
+                <outlet property="gifImageView" destination="2ak-1p-Ydl" id="ly8-Ax-JKb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ak-1p-Ydl">
+                    <rect key="frame" x="174" y="101" width="240" height="240"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.34509803919999998" green="0.77647058820000003" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="69k-7E-IvM"/>
+                        <constraint firstAttribute="height" constant="240" id="gkZ-mx-LMa"/>
+                    </constraints>
+                </webView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支付成功" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NH5-GP-qz6">
+                    <rect key="frame" x="206" y="369" width="189" height="21"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="189" id="K7L-0m-QDG"/>
+                        <constraint firstAttribute="height" constant="21" id="MTc-nZ-E3V"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.38152217803962274" green="0.75546289116649878" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="NH5-GP-qz6" secondAttribute="trailing" constant="205" id="7Ac-3V-jbz"/>
+                <constraint firstItem="NH5-GP-qz6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="206" id="K6j-kE-nok"/>
+                <constraint firstAttribute="trailing" secondItem="2ak-1p-Ydl" secondAttribute="trailing" constant="186" id="dPA-yx-5yM"/>
+                <constraint firstAttribute="bottom" secondItem="2ak-1p-Ydl" secondAttribute="bottom" constant="259" id="j6O-pN-4xp"/>
+                <constraint firstItem="2ak-1p-Ydl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="101" id="lBh-Ge-5t7"/>
+                <constraint firstAttribute="bottom" secondItem="NH5-GP-qz6" secondAttribute="bottom" constant="210" id="pgf-j5-hyO"/>
+                <constraint firstItem="2ak-1p-Ydl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="174" id="uPp-20-9ur"/>
+                <constraint firstItem="NH5-GP-qz6" firstAttribute="top" secondItem="2ak-1p-Ydl" secondAttribute="bottom" constant="28" id="xuM-QG-W7X"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

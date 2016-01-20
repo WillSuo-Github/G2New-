@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="9046" systemVersion="14F27" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JiaoYiJiLuViewController">
+            <connections>
+                <outlet property="bigView" destination="nxl-ES-Zkg" id="Itl-nV-0EW"/>
+                <outlet property="contentView" destination="FBV-Hh-IZY" id="dnP-OP-GxS"/>
+                <outlet property="jiluTableView" destination="psY-i5-V2L" id="Ltq-vU-gCp"/>
+                <outlet property="jinqitian" destination="Z6v-1h-eRn" id="Uiy-1V-yqc"/>
+                <outlet property="jintian" destination="Fn2-i7-tC4" id="4ax-iD-yGW"/>
+                <outlet property="riliNoOne" destination="LQp-Yd-vus" id="nt7-7r-gsm"/>
+                <outlet property="riliNoTwo" destination="xSs-EI-n0D" id="n8p-W7-n3O"/>
+                <outlet property="riliOne" destination="kLK-Gx-uUi" id="9N7-fp-S7Q"/>
+                <outlet property="riliTwo" destination="gfH-pU-Dqg" id="oZ8-rN-oyK"/>
+                <outlet property="tableView" destination="YC5-Xz-1eI" id="9QL-bT-9Wn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1343" height="700"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="nxl-ES-Zkg">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="80"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全部" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Lvc-4G-RIo">
+                            <rect key="frame" x="547" y="36" width="84" height="38"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.65000000000000002" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="交易选项" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XuU-cV-Ydu">
+                            <rect key="frame" x="49" y="36" width="96" height="38"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Fn2-i7-tC4">
+                            <rect key="frame" x="219" y="44" width="87" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.16292934689999999" green="0.56475102600000004" blue="0.93497474749999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="今天">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="jintian:" destination="-1" eventType="touchUpInside" id="rhA-d3-WV0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Z6v-1h-eRn">
+                            <rect key="frame" x="314" y="44" width="87" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" title="近七天">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="jinqitian:" destination="-1" eventType="touchUpInside" id="XcC-G7-FgT"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="521" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xSs-EI-n0D">
+                            <rect key="frame" x="832" y="45" width="104" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="结束日期"/>
+                            <connections>
+                                <action selector="riqixuanze1:" destination="-1" eventType="touchUpInside" id="5i6-KS-yZs"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MJl-TQ-KwP">
+                            <rect key="frame" x="967" y="36" width="48" height="41"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button" image="dataFineshujubaobiao.png"/>
+                            <connections>
+                                <action selector="riqichaxun:" destination="-1" eventType="touchUpInside" id="429-Ne-68V"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iv9-41-hkI">
+                            <rect key="frame" x="788" y="56" width="15" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="gfH-pU-Dqg">
+                            <rect key="frame" x="815" y="40" width="139" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" tag="520" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LQp-Yd-vus">
+                            <rect key="frame" x="655" y="46" width="107" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="起始日期"/>
+                            <connections>
+                                <action selector="riqixuanze1:" destination="-1" eventType="touchUpInside" id="S0Z-wm-FLk"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="kLK-Gx-uUi">
+                            <rect key="frame" x="639" y="41" width="139" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ihj-nI-kr2">
+                    <rect key="frame" x="0.0" y="81" width="1024" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vmo-r6-OZl">
+                    <rect key="frame" x="201" y="0.0" width="1" height="700"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" id="epM-KA-C4O">
+                    <rect key="frame" x="0.0" y="82" width="200" height="619"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="YC5-Xz-1eI">
+                            <rect key="frame" x="0.0" y="0.0" width="200" height="619"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </tableView>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="FBV-Hh-IZY">
+                    <rect key="frame" x="216" y="90" width="800" height="602"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="gWc-AU-oCX">
+                    <rect key="frame" x="226" y="100" width="800" height="602"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Gkx-G8-Lx7">
+                            <rect key="frame" x="0.0" y="44" width="800" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Adw-eC-9jE">
+                            <rect key="frame" x="108" y="15" width="34" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <attributedString key="attributedText">
+                                <fragment content="餐台">
+                                    <attributes>
+                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="0.65000000000000002" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="17" name="STHeitiSC-Medium"/>
+                                        <font key="NSOriginalFont" size="17" name="Arial-BoldMT"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xtx-Mk-ZhH">
+                            <rect key="frame" x="162" y="15" width="51" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <attributedString key="attributedText">
+                                <fragment content="开单人">
+                                    <attributes>
+                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="0.65000000000000002" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="17" name="STHeitiSC-Medium"/>
+                                        <font key="NSOriginalFont" size="17" name="Arial-BoldMT"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PL4-fx-H3S">
+                            <rect key="frame" x="33" y="15" width="34" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <attributedString key="attributedText">
+                                <fragment content="单号">
+                                    <attributes>
+                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="0.65000000000000002" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="17" name="STHeitiSC-Medium"/>
+                                        <font key="NSOriginalFont" size="17" name="Arial-BoldMT"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JjV-4W-G2T">
+                            <rect key="frame" x="237" y="15" width="51" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <attributedString key="attributedText">
+                                <fragment content="收银员">
+                                    <attributes>
+                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="0.65000000000000002" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="17" name="STHeitiSC-Medium"/>
+                                        <font key="NSOriginalFont" size="17" name="Arial-BoldMT"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dJD-O5-6TH">
+                            <rect key="frame" x="346" y="15" width="68" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <attributedString key="attributedText">
+                                <fragment content="开单时间">
+                                    <attributes>
+                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="0.65000000000000002" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="17" name="STHeitiSC-Medium"/>
+                                        <font key="NSOriginalFont" size="17" name="Arial-BoldMT"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SES-IP-ySy">
+                            <rect key="frame" x="471" y="15" width="68" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <attributedString key="attributedText">
+                                <fragment content="结账时间">
+                                    <attributes>
+                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="0.65000000000000002" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="17" name="STHeitiSC-Medium"/>
+                                        <font key="NSOriginalFont" size="17" name="Arial-BoldMT"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7E9-vE-cp1">
+                            <rect key="frame" x="558" y="15" width="68" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <attributedString key="attributedText">
+                                <fragment content="应收金额">
+                                    <attributes>
+                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="0.65000000000000002" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="17" name="STHeitiSC-Medium"/>
+                                        <font key="NSOriginalFont" size="17" name="Arial-BoldMT"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cmW-f2-xfD">
+                            <rect key="frame" x="642" y="15" width="68" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <attributedString key="attributedText">
+                                <fragment content="实收金额">
+                                    <attributes>
+                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="0.65000000000000002" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="17" name="STHeitiSC-Medium"/>
+                                        <font key="NSOriginalFont" size="17" name="Arial-BoldMT"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="psY-i5-V2L">
+                            <rect key="frame" x="0.0" y="45" width="800" height="557"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </tableView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sme-xW-iCT">
+                            <rect key="frame" x="725" y="15" width="61" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <attributedString key="attributedText">
+                                <fragment content="状态">
+                                    <attributes>
+                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="0.65000000000000002" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="17" name="STHeitiSC-Medium"/>
+                                        <font key="NSOriginalFont" size="17" name="Arial-BoldMT"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="637.5" y="381"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dataFineshujubaobiao.png" width="46" height="41"/>
+    </resources>
+</document>

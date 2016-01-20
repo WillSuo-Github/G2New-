@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DXKeyboard">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="412"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCb-OG-8UD">
+                    <rect key="frame" x="238" y="13" width="111" height="70"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="eNo-G0-d2e"/>
+                        <constraint firstAttribute="width" constant="111" id="vhf-ph-lDU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="30"/>
+                    <state key="normal" title="1">
+                        <color key="titleColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="0.81000000000000005" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="oneBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="aqg-6u-LUB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YnH-x7-M0b">
+                    <rect key="frame" x="370" y="13" width="111" height="70"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="111" id="UW8-BH-yMS"/>
+                        <constraint firstAttribute="height" constant="70" id="eo1-Jw-bmd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="30"/>
+                    <state key="normal" title="2">
+                        <color key="titleColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="0.81000000000000005" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="oneBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="eLt-Vd-SI3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bYB-5v-azS">
+                    <rect key="frame" x="238" y="95" width="111" height="70"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="24j-jc-cwn"/>
+                        <constraint firstAttribute="width" constant="111" id="WAN-mq-MKQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="35"/>
+                    <state key="normal" title="4">
+                        <color key="titleColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="0.81000000000000005" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="oneBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="Km6-En-Efr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fxn-MS-YX5">
+                    <rect key="frame" x="497" y="13" width="111" height="70"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="ddh-hd-VXK"/>
+                        <constraint firstAttribute="width" constant="111" id="nic-NZ-qsg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="32"/>
+                    <state key="normal" title="3">
+                        <color key="titleColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="0.81000000000000005" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="oneBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="8oz-jr-yOc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Tn-cj-L1p">
+                    <rect key="frame" x="370" y="96" width="111" height="69"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="111" id="3C6-dC-c7G"/>
+                        <constraint firstAttribute="height" constant="69" id="iD8-UU-2ua"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="32"/>
+                    <state key="normal" title="5">
+                        <color key="titleColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="0.81000000000000005" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="oneBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="ONz-Q6-XlU"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bd2-T1-PaZ">
+                    <rect key="frame" x="238" y="179" width="111" height="70"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="111" id="Tq7-ao-jek"/>
+                        <constraint firstAttribute="height" constant="70" id="ryb-Jg-GcX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="32"/>
+                    <state key="normal" title="7">
+                        <color key="titleColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="0.81000000000000005" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="oneBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="T7q-1o-Gt3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SkK-Uy-EaH">
+                    <rect key="frame" x="370" y="179" width="111" height="70"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="111" id="4bo-6L-E39"/>
+                        <constraint firstAttribute="height" constant="70" id="5iw-pb-cqf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="32"/>
+                    <state key="normal" title="8">
+                        <color key="titleColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="0.81000000000000005" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="oneBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="LZK-36-cnW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhO-wz-hGe">
+                    <rect key="frame" x="370" y="263" width="111" height="70"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="111" id="Yne-BS-1kY"/>
+                        <constraint firstAttribute="height" constant="70" id="hng-Jd-u25"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="32"/>
+                    <state key="normal" title="00">
+                        <color key="titleColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="0.81000000000000005" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="oneBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="U05-hO-86r"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqb-qv-h5z">
+                    <rect key="frame" x="497" y="96" width="111" height="69"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="69" id="08j-JX-ml8"/>
+                        <constraint firstAttribute="width" constant="111" id="JdQ-hd-wqE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="32"/>
+                    <state key="normal" title="6">
+                        <color key="titleColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="0.81000000000000005" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="oneBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="3H4-rk-Mff"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAj-Ap-d81">
+                    <rect key="frame" x="497" y="179" width="111" height="70"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="5YX-g8-f3S"/>
+                        <constraint firstAttribute="width" constant="111" id="oWs-AU-ATc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="32"/>
+                    <state key="normal" title="9">
+                        <color key="titleColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="0.81000000000000005" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="oneBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="BWR-NB-2a0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jY7-zG-Pux">
+                    <rect key="frame" x="497" y="263" width="111" height="70"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="111" id="PMe-97-ThC"/>
+                        <constraint firstAttribute="height" constant="70" id="x4Z-4U-ruN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="32"/>
+                    <state key="normal" title="0">
+                        <color key="titleColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="0.81000000000000005" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="oneBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="y59-gB-nBp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="13" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20N-VR-XaX">
+                    <rect key="frame" x="661" y="18" width="150" height="70"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="IMx-bd-26C"/>
+                        <constraint firstAttribute="height" constant="70" id="b8J-XF-D1L"/>
+                    </constraints>
+                    <state key="normal" image="keybordDelete">
+                        <color key="titleColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="0.81000000000000005" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="oneBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="nfi-qT-M2S"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ab4-KD-h0b">
+                    <rect key="frame" x="661" y="96" width="150" height="153"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="153" id="710-Sa-whC"/>
+                        <constraint firstAttribute="width" constant="150" id="W9Y-BQ-ZcF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
+                    <state key="normal" title="确认">
+                        <color key="titleColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="0.81000000000000005" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="oneBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="cy7-DV-FPc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bcl-eQ-335">
+                    <rect key="frame" x="661" y="263" width="150" height="70"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="XAQ-Ck-LoB"/>
+                        <constraint firstAttribute="width" constant="150" id="bTc-k5-9sq"/>
+                    </constraints>
+                    <state key="normal" image="keybord">
+                        <color key="titleColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="0.81000000000000005" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="oneBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="MRh-sd-IqF"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nph-o2-eiw">
+                    <rect key="frame" x="238" y="263" width="111" height="70"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="0iB-R1-U1t"/>
+                        <constraint firstAttribute="width" constant="111" id="kCR-D2-NWC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="32"/>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="-16" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title=".">
+                        <color key="titleColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="0.81000000000000005" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="oneBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="ztj-m4-2xM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="SkK-Uy-EaH" firstAttribute="top" secondItem="4Tn-cj-L1p" secondAttribute="bottom" constant="14" id="5S2-g9-qTq"/>
+                <constraint firstItem="jY7-zG-Pux" firstAttribute="top" secondItem="cAj-Ap-d81" secondAttribute="bottom" constant="14" id="AbK-27-FkK"/>
+                <constraint firstItem="Nph-o2-eiw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="238" id="BAs-Ax-U2Y"/>
+                <constraint firstItem="bYB-5v-azS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="238" id="CtN-aG-TBV"/>
+                <constraint firstItem="Bcl-eQ-335" firstAttribute="top" secondItem="ab4-KD-h0b" secondAttribute="bottom" constant="14" id="Eru-Cm-wmG"/>
+                <constraint firstItem="jY7-zG-Pux" firstAttribute="leading" secondItem="rhO-wz-hGe" secondAttribute="trailing" constant="16" id="Fnh-AN-6cG"/>
+                <constraint firstItem="Nph-o2-eiw" firstAttribute="top" secondItem="Bd2-T1-PaZ" secondAttribute="bottom" constant="14" id="HgS-Ez-rif"/>
+                <constraint firstItem="Bd2-T1-PaZ" firstAttribute="top" secondItem="bYB-5v-azS" secondAttribute="bottom" constant="13" id="L1x-dM-d1R"/>
+                <constraint firstItem="bqb-qv-h5z" firstAttribute="top" secondItem="Fxn-MS-YX5" secondAttribute="bottom" constant="13" id="LQl-j7-OwQ"/>
+                <constraint firstItem="SkK-Uy-EaH" firstAttribute="leading" secondItem="Bd2-T1-PaZ" secondAttribute="trailing" constant="21" id="Mzt-wj-rWe"/>
+                <constraint firstItem="Fxn-MS-YX5" firstAttribute="leading" secondItem="YnH-x7-M0b" secondAttribute="trailing" constant="16" id="RQo-6g-Rab"/>
+                <constraint firstItem="cAj-Ap-d81" firstAttribute="top" secondItem="bqb-qv-h5z" secondAttribute="bottom" constant="14" id="Ygy-7K-PBp"/>
+                <constraint firstItem="MCb-OG-8UD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="13" id="Yxc-ru-I0j"/>
+                <constraint firstItem="Bcl-eQ-335" firstAttribute="leading" secondItem="jY7-zG-Pux" secondAttribute="trailing" constant="53" id="ZDZ-Qc-vkz"/>
+                <constraint firstItem="20N-VR-XaX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="13" id="b2t-nC-d4e"/>
+                <constraint firstItem="rhO-wz-hGe" firstAttribute="top" secondItem="SkK-Uy-EaH" secondAttribute="bottom" constant="14" id="ch7-zr-SC6"/>
+                <constraint firstItem="4Tn-cj-L1p" firstAttribute="leading" secondItem="bYB-5v-azS" secondAttribute="trailing" constant="21" id="cig-dk-ehD"/>
+                <constraint firstItem="20N-VR-XaX" firstAttribute="leading" secondItem="Fxn-MS-YX5" secondAttribute="trailing" constant="53" id="cxy-Nn-Lkm"/>
+                <constraint firstItem="ab4-KD-h0b" firstAttribute="leading" secondItem="cAj-Ap-d81" secondAttribute="trailing" constant="53" id="egb-0N-yDm"/>
+                <constraint firstItem="bqb-qv-h5z" firstAttribute="leading" secondItem="4Tn-cj-L1p" secondAttribute="trailing" constant="16" id="few-OZ-Jhd"/>
+                <constraint firstItem="4Tn-cj-L1p" firstAttribute="top" secondItem="YnH-x7-M0b" secondAttribute="bottom" constant="13" id="kEa-oc-EeQ"/>
+                <constraint firstItem="bYB-5v-azS" firstAttribute="top" secondItem="MCb-OG-8UD" secondAttribute="bottom" constant="13" id="lG6-2x-nnI"/>
+                <constraint firstItem="ab4-KD-h0b" firstAttribute="top" secondItem="20N-VR-XaX" secondAttribute="bottom" constant="13" id="mdq-H8-qPg"/>
+                <constraint firstItem="YnH-x7-M0b" firstAttribute="leading" secondItem="MCb-OG-8UD" secondAttribute="trailing" constant="21" id="nLk-Ba-MBH"/>
+                <constraint firstItem="cAj-Ap-d81" firstAttribute="leading" secondItem="SkK-Uy-EaH" secondAttribute="trailing" constant="16" id="nW8-fq-sMm"/>
+                <constraint firstItem="Fxn-MS-YX5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="13" id="qqn-s3-b8J"/>
+                <constraint firstItem="YnH-x7-M0b" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="13" id="rVJ-9B-sDs"/>
+                <constraint firstItem="rhO-wz-hGe" firstAttribute="leading" secondItem="Nph-o2-eiw" secondAttribute="trailing" constant="21" id="rbO-g7-yUU"/>
+                <constraint firstItem="MCb-OG-8UD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="238" id="xgx-wD-FTB"/>
+                <constraint firstItem="Bd2-T1-PaZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="238" id="zRF-ld-Lmm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btn" destination="Bcl-eQ-335" id="Fex-VN-oCC"/>
+                <outlet property="deleteButton" destination="20N-VR-XaX" id="31j-Cd-Qvd"/>
+                <outlet property="doubleZeroButton" destination="rhO-wz-hGe" id="CIs-q1-mVg"/>
+                <outlet property="eightButton" destination="SkK-Uy-EaH" id="NnT-7f-6HA"/>
+                <outlet property="fiveButton" destination="4Tn-cj-L1p" id="d8T-qS-jMZ"/>
+                <outlet property="fourButton" destination="bYB-5v-azS" id="BmY-LS-xId"/>
+                <outlet property="hiddenButton" destination="Bcl-eQ-335" id="pae-YL-o1O"/>
+                <outlet property="nineButton" destination="cAj-Ap-d81" id="fzL-TC-k57"/>
+                <outlet property="okButton" destination="ab4-KD-h0b" id="rHh-AS-boV"/>
+                <outlet property="oneButton" destination="MCb-OG-8UD" id="r43-0p-2y4"/>
+                <outlet property="pointButton" destination="Nph-o2-eiw" id="zYA-dE-Yue"/>
+                <outlet property="sevenButton" destination="Bd2-T1-PaZ" id="Z3U-1f-dEa"/>
+                <outlet property="sixButton" destination="bqb-qv-h5z" id="gZf-Ah-VYN"/>
+                <outlet property="threeButton" destination="Fxn-MS-YX5" id="OsB-gf-CHl"/>
+                <outlet property="twoButton" destination="YnH-x7-M0b" id="zd7-id-4RS"/>
+                <outlet property="zeroButton" destination="jY7-zG-Pux" id="FMl-9x-8PK"/>
+            </connections>
+            <point key="canvasLocation" x="639" y="310"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="keybord" width="300" height="140"/>
+        <image name="keybordDelete" width="300" height="140"/>
+    </resources>
+</document>

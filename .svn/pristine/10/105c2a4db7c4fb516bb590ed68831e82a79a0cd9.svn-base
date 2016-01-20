@@ -1,0 +1,111 @@
+platform :ios, '7.0'
+target 'G2TestDemo' do
+	pod 'AFNetworking', '~> 2.5.4'
+	pod 'MJExtension', '~> 3.0.7'
+	pod 'MJRefresh', '~> 2.3.2'
+	pod 'MBProgressHUD', '~> 0.9.1'
+	pod 'MBProgressHUDExtensions', '~> 0.0.1'
+	pod 'SDWebImage', '~> 3.7.3'
+	pod 'XYPieChart', '~> 0.2'
+	pod 'TTSwitch', '~> 0.0.6'
+	pod 'IQKeyboardManager', '~> 3.2.4'
+end
+
+target 'NDL-LIB-FRAME' do
+        pod 'AFNetworking', '~> 2.5.4'
+        pod 'MJExtension', '~> 3.0.7'
+        pod 'MJRefresh', '~> 2.3.2'
+        pod 'MBProgressHUD', '~> 0.9.1'
+        pod 'MBProgressHUDExtensions', '~> 0.0.1'
+        pod 'SDWebImage', '~> 3.7.3'
+        pod 'XYPieChart', '~> 0.2'
+        pod 'TTSwitch', '~> 0.0.6'
+        pod 'IQKeyboardManager', '~> 3.2.4'
+end
+
+target 'NDL-LIB-MINISDK' do
+        pod 'AFNetworking', '~> 2.5.4'
+        pod 'MJExtension', '~> 3.0.7'
+        pod 'MJRefresh', '~> 2.3.2'
+        pod 'MBProgressHUD', '~> 0.9.1'
+        pod 'MBProgressHUDExtensions', '~> 0.0.1'
+        pod 'SDWebImage', '~> 3.7.3'
+        pod 'XYPieChart', '~> 0.2'
+        pod 'TTSwitch', '~> 0.0.6'
+        pod 'IQKeyboardManager', '~> 3.2.4'
+end
+
+target 'NDL-LIB-TRANSFER' do
+        pod 'AFNetworking', '~> 2.5.4'
+        pod 'MJExtension', '~> 3.0.7'
+        pod 'MJRefresh', '~> 2.3.2'
+        pod 'MBProgressHUD', '~> 0.9.1'
+        pod 'MBProgressHUDExtensions', '~> 0.0.1'
+        pod 'SDWebImage', '~> 3.7.3'
+        pod 'XYPieChart', '~> 0.2'
+        pod 'TTSwitch', '~> 0.0.6'
+        pod 'IQKeyboardManager', '~> 3.2.4'
+end
+
+target 'NDL-LIB-MODEL' do
+        pod 'AFNetworking', '~> 2.5.4'
+        pod 'MJExtension', '~> 3.0.7'
+        pod 'MJRefresh', '~> 2.3.2'
+        pod 'MBProgressHUD', '~> 0.9.1'
+        pod 'MBProgressHUDExtensions', '~> 0.0.1'
+        pod 'SDWebImage', '~> 3.7.3'
+        pod 'XYPieChart', '~> 0.2'
+        pod 'TTSwitch', '~> 0.0.6'
+        pod 'IQKeyboardManager', '~> 3.2.4'
+end
+
+target 'NDL-LIB-CORE-BS' do
+        pod 'AFNetworking', '~> 2.5.4'
+        pod 'MJExtension', '~> 3.0.7'
+        pod 'MJRefresh', '~> 2.3.2'
+        pod 'MBProgressHUD', '~> 0.9.1'
+        pod 'MBProgressHUDExtensions', '~> 0.0.1'
+        pod 'SDWebImage', '~> 3.7.3'
+        pod 'XYPieChart', '~> 0.2'
+        pod 'TTSwitch', '~> 0.0.6'
+        pod 'IQKeyboardManager', '~> 3.2.4'
+end
+
+target 'NDL-LIB-G2-CORE' do
+        pod 'AFNetworking', '~> 2.5.4'
+        pod 'MJExtension', '~> 3.0.7'
+        pod 'MJRefresh', '~> 2.3.2'
+        pod 'MBProgressHUD', '~> 0.9.1'
+        pod 'MBProgressHUDExtensions', '~> 0.0.1'
+        pod 'SDWebImage', '~> 3.7.3'
+        pod 'XYPieChart', '~> 0.2'
+        pod 'TTSwitch', '~> 0.0.6'
+        pod 'IQKeyboardManager', '~> 3.2.4'
+end
+
+
+target 'G2-JEWELRY' do
+        pod 'AFNetworking', '~> 2.5.4'
+        pod 'MJExtension', '~> 3.0.7'
+        pod 'MJRefresh', '~> 2.3.2'
+        pod 'MBProgressHUD', '~> 0.9.1'
+        pod 'MBProgressHUDExtensions', '~> 0.0.1'
+        pod 'SDWebImage', '~> 3.7.3'
+        pod 'XYPieChart', '~> 0.2'
+        pod 'TTSwitch', '~> 0.0.6'
+        pod 'IQKeyboardManager', '~> 3.2.4'
+end
+
+target 'NDL-BS-CICRLE' do
+        pod 'AFNetworking', '~> 2.5.4'
+        pod 'MJExtension', '~> 3.0.7'
+        pod 'MJRefresh', '~> 2.3.2'
+        pod 'MBProgressHUD', '~> 0.9.1'
+        pod 'MBProgressHUDExtensions', '~> 0.0.1'
+        pod 'SDWebImage', '~> 3.7.3'
+        pod 'XYPieChart', '~> 0.2'
+        pod 'TTSwitch', '~> 0.0.6'
+        pod 'IQKeyboardManager', '~> 3.2.4'
+end     
+
+

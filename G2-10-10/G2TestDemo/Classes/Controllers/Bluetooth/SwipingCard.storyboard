@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="QUe-YL-Yth">
+            <objects>
+                <viewController storyboardIdentifier="ffff" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YiV-pb-2rv" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Eie-lZ-QRq"/>
+                        <viewControllerLayoutGuide type="bottom" id="Y0Q-ln-W7x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Bb-18-6nG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="刷卡提示" translatesAutoresizingMaskIntoConstraints="NO" id="9Bs-y3-jck">
+                                <rect key="frame" x="85" y="269" width="431" height="216"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="i4y-XB-yam"/>
+                                    <constraint firstAttribute="height" constant="400" id="kP0-AJ-0XC"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="i4y-XB-yam"/>
+                                        <exclude reference="kP0-AJ-0XC"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="1" y="191" width="600" height="400"/>
+                                    <mask key="constraints">
+                                        <include reference="i4y-XB-yam"/>
+                                        <include reference="kP0-AJ-0XC"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="请插入&quot;芯片卡&quot;或者刷&quot;磁条卡&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v53-KJ-UjN">
+                                <rect key="frame" x="266" y="137" width="68" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="Lpn-cb-fNg"/>
+                                    <constraint firstAttribute="height" constant="21" id="cbK-ki-HU3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Lpn-cb-fNg"/>
+                                        <exclude reference="cbK-ki-HU3"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="Lpn-cb-fNg"/>
+                                        <include reference="cbK-ki-HU3"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <constraints>
+                            <constraint firstItem="v53-KJ-UjN" firstAttribute="top" secondItem="Eie-lZ-QRq" secondAttribute="bottom" constant="90" id="Glm-RS-bV8"/>
+                            <constraint firstItem="9Bs-y3-jck" firstAttribute="top" secondItem="v53-KJ-UjN" secondAttribute="bottom" constant="60" id="How-lL-7v9"/>
+                            <constraint firstItem="9Bs-y3-jck" firstAttribute="centerX" secondItem="7Bb-18-6nG" secondAttribute="centerX" id="Umt-9a-SPa"/>
+                            <constraint firstItem="v53-KJ-UjN" firstAttribute="centerX" secondItem="7Bb-18-6nG" secondAttribute="centerX" id="yiY-GD-sGA"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="How-lL-7v9"/>
+                                <exclude reference="Umt-9a-SPa"/>
+                                <exclude reference="Glm-RS-bV8"/>
+                                <exclude reference="yiY-GD-sGA"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="How-lL-7v9"/>
+                                <include reference="Umt-9a-SPa"/>
+                                <include reference="Glm-RS-bV8"/>
+                                <include reference="yiY-GD-sGA"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <modalPageSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vu3-35-zbo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="390.75" y="407"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="T0V-lM-N2B">
+            <objects>
+                <viewController id="McL-mY-jFj" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mtb-i5-1D9"/>
+                        <viewControllerLayoutGuide type="bottom" id="fJ8-2q-tf7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fQ8-fR-Bib">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="提示顾客确认卡号" translatesAutoresizingMaskIntoConstraints="NO" id="OZp-wF-7zc">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="74" y="113" width="453" height="226"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="OZp-wF-7zc"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="OZp-wF-7zc"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <modalPageSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uWI-KD-ePm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="913.5" y="407"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="刷卡提示" width="1000" height="500"/>
+        <image name="提示顾客确认卡号" width="649" height="389"/>
+    </resources>
+</document>

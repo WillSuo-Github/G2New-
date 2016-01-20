@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Nez-jc-Dso">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--我的圈子-->
+        <scene sceneID="qc1-Wc-aUI">
+            <objects>
+                <viewController storyboardIdentifier="NDLMYApplicationController" title="我的圈子" id="DRI-Bb-9SC" customClass="NDLMYApplicationController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wwX-ne-qHB"/>
+                        <viewControllerLayoutGuide type="bottom" id="VsO-Dj-WWM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZN2-DM-icg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pzK-WQ-70f">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="pzK-WQ-70f" secondAttribute="trailing" constant="-20" id="DAp-EH-gEn"/>
+                            <constraint firstItem="VsO-Dj-WWM" firstAttribute="top" secondItem="pzK-WQ-70f" secondAttribute="bottom" id="RDY-40-HLP"/>
+                            <constraint firstItem="pzK-WQ-70f" firstAttribute="leading" secondItem="ZN2-DM-icg" secondAttribute="leadingMargin" constant="-20" id="VUs-Nf-hyt"/>
+                            <constraint firstItem="pzK-WQ-70f" firstAttribute="top" secondItem="ZN2-DM-icg" secondAttribute="topMargin" id="fBF-NE-ZgP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="我的圈子" id="1Dg-Sq-eJk"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="tableView" destination="pzK-WQ-70f" id="vvo-iO-dr4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h9c-Qb-2b8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="776" y="625"/>
+        </scene>
+        <!--社交圈-->
+        <scene sceneID="nT7-CQ-aXk">
+            <objects>
+                <viewController storyboardIdentifier="NDLLiferCircleController" title="生活服务" id="mt7-We-5hf" userLabel="社交圈" customClass="NDLLiferCircleController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g4v-xM-8BC"/>
+                        <viewControllerLayoutGuide type="bottom" id="SFl-VI-pyO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="center" id="Au3-Cb-r0y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="center" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="h2p-Aq-zr4">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                                <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="h2p-Aq-zr4" firstAttribute="top" secondItem="Au3-Cb-r0y" secondAttribute="topMargin" id="Whg-HS-yGO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="h2p-Aq-zr4" secondAttribute="trailing" constant="-20" id="h0E-8Q-98O"/>
+                            <constraint firstItem="SFl-VI-pyO" firstAttribute="top" secondItem="h2p-Aq-zr4" secondAttribute="bottom" id="p4L-ih-eeA"/>
+                            <constraint firstItem="h2p-Aq-zr4" firstAttribute="leading" secondItem="Au3-Cb-r0y" secondAttribute="leadingMargin" constant="-20" id="xXk-28-g1A"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="社交圈" id="PGy-CV-LBm"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="tableView" destination="h2p-Aq-zr4" id="YXh-zG-g4L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WRu-p0-hcr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="193" y="-1609"/>
+        </scene>
+        <!--商圈-->
+        <scene sceneID="M02-M7-g6e">
+            <objects>
+                <viewController storyboardIdentifier="NDLBSCircleController" title="首页" id="nEd-Zh-9gZ" userLabel="商圈" customClass="NDLBSCircleController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GTI-7B-ssq"/>
+                        <viewControllerLayoutGuide type="bottom" id="9lD-FZ-8NU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c07-mn-yPo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="MfT-6T-LSK">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9lD-FZ-8NU" firstAttribute="top" secondItem="MfT-6T-LSK" secondAttribute="bottom" id="Hy8-F1-6Ng"/>
+                            <constraint firstItem="MfT-6T-LSK" firstAttribute="leading" secondItem="c07-mn-yPo" secondAttribute="leadingMargin" constant="-20" id="PGs-Pd-BKB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MfT-6T-LSK" secondAttribute="trailing" constant="-20" id="jYK-yx-G9S"/>
+                            <constraint firstItem="MfT-6T-LSK" firstAttribute="top" secondItem="c07-mn-yPo" secondAttribute="topMargin" id="uLZ-GV-OPA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="商圈" id="brI-Fh-evU"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="tableView" destination="MfT-6T-LSK" id="yzR-qo-SFd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eaZ-Ud-cad" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="516" y="-775"/>
+        </scene>
+        <!--Main Tab Bar Controller-->
+        <scene sceneID="GME-Dr-gLk">
+            <objects>
+                <tabBarController storyboardIdentifier="KTLBMainTabBarController" id="Nez-jc-Dso" customClass="KTLBMainTabBarController" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="yel-Xd-uYx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="PgY-ev-6ks" kind="relationship" relationship="viewControllers" id="u5d-M9-agD"/>
+                        <segue destination="e0h-WT-aOb" kind="relationship" relationship="viewControllers" id="nx3-mH-aCT"/>
+                        <segue destination="gnM-Kz-1an" kind="relationship" relationship="viewControllers" id="f3T-or-aOZ"/>
+                        <segue destination="ohi-2b-47E" kind="relationship" relationship="viewControllers" id="Lxc-bO-pJi"/>
+                        <segue destination="DQ5-eU-RVX" kind="relationship" relationship="viewControllers" id="6Oi-1W-zvc"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kkO-ZQ-EzP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-643" y="-66"/>
+        </scene>
+        <!--收银台-->
+        <scene sceneID="v46-eF-8qa">
+            <objects>
+                <viewController storyboardIdentifier="NDLCashPayNavController" title="周边查找" id="mb0-RB-fed" userLabel="收银台" customClass="NDLCashPayNavController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="va1-JI-Pyq"/>
+                        <viewControllerLayoutGuide type="bottom" id="hfC-UX-fWx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="A87-0A-sJ4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="uQo-Ca-rPj">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hfC-UX-fWx" firstAttribute="top" secondItem="uQo-Ca-rPj" secondAttribute="bottom" id="YHU-pn-GOk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uQo-Ca-rPj" secondAttribute="trailing" constant="-20" id="eGO-ST-dS5"/>
+                            <constraint firstItem="uQo-Ca-rPj" firstAttribute="top" secondItem="A87-0A-sJ4" secondAttribute="topMargin" id="mHa-2i-dhN"/>
+                            <constraint firstItem="uQo-Ca-rPj" firstAttribute="leading" secondItem="A87-0A-sJ4" secondAttribute="leadingMargin" constant="-20" id="ntX-qf-xrL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="收银台" id="Pv1-IC-1Lv" userLabel="收银台"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="tableView" destination="uQo-Ca-rPj" id="E1D-TZ-ume"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QaW-2d-M4s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-70" y="826"/>
+        </scene>
+        <!--收银台导航-->
+        <scene sceneID="SCt-QJ-Y35">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gnM-Kz-1an" userLabel="收银台导航" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="收银台" image="tab_3_on.png" id="Ygo-8m-5sk"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Uy5-l5-CCT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mb0-RB-fed" kind="relationship" relationship="rootViewController" id="HgI-6l-7Xz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ee7-Te-1cZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-643" y="826"/>
+        </scene>
+        <!--首页导航-->
+        <scene sceneID="yl8-YI-S3I">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PgY-ev-6ks" userLabel="首页导航" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="10" title="商圈" image="tab_1_on.png" id="YtB-6q-pXq"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jzS-Ta-nRf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nEd-Zh-9gZ" kind="relationship" relationship="rootViewController" id="nmV-I7-VJL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jU8-cu-1Zz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36" y="-775"/>
+        </scene>
+        <!--生活服务导航-->
+        <scene sceneID="duL-pJ-kVO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e0h-WT-aOb" userLabel="生活服务导航" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="社交圈" image="tab_2_on.png" id="rcz-B2-17t" userLabel="社交圈"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AiV-L2-njW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mt7-We-5hf" kind="relationship" relationship="rootViewController" id="KGi-X6-TqM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IPd-Oh-ast" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-397" y="-1609"/>
+        </scene>
+        <!--我的圈子导航-->
+        <scene sceneID="ch1-vp-W7z">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DQ5-eU-RVX" userLabel="我的圈子导航" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="40" title="我的圈子" image="tab_5_on.png" id="w86-cA-7QV"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9al-Ug-Lsk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DRI-Bb-9SC" kind="relationship" relationship="rootViewController" id="Akw-xG-w1V"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="82U-4y-KaG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="326" y="625"/>
+        </scene>
+        <!--金融超市-->
+        <scene sceneID="TsR-Ay-Qyo">
+            <objects>
+                <viewController storyboardIdentifier="NDLBankMarketController" title="金融超市" id="xkH-aA-G2N" userLabel="金融超市" customClass="NDLBankMarketController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1kE-Ai-1sG"/>
+                        <viewControllerLayoutGuide type="bottom" id="FWd-mx-Se7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XcW-p3-IPc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="I3H-Ae-D0D">
+                                <rect key="frame" x="-5" y="0.0" width="325" height="519"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FWd-mx-Se7" firstAttribute="top" secondItem="I3H-Ae-D0D" secondAttribute="bottom" id="KNj-Xs-Xom"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="I3H-Ae-D0D" secondAttribute="trailing" constant="-20" id="QGA-dR-qqi"/>
+                            <constraint firstItem="I3H-Ae-D0D" firstAttribute="top" secondItem="XcW-p3-IPc" secondAttribute="topMargin" id="c8u-Lm-ZfQ"/>
+                            <constraint firstItem="I3H-Ae-D0D" firstAttribute="leading" secondItem="XcW-p3-IPc" secondAttribute="leadingMargin" constant="-25" id="t4W-lV-JYk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="金融超市" id="G7f-xS-5oG"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T5Z-Kh-cbe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="562" y="-66"/>
+        </scene>
+        <!--金融超市-->
+        <scene sceneID="vke-pZ-8dZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ohi-2b-47E" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="金融超市" image="tab_4_on.png" id="cOd-Sq-KA9" userLabel="金融超市"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="he1-dm-5nd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xkH-aA-G2N" kind="relationship" relationship="rootViewController" id="tld-DJ-IMm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jki-mV-zgF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50" y="-61"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tab_1_on.png" width="45" height="45"/>
+        <image name="tab_2_on.png" width="45" height="45"/>
+        <image name="tab_3_on.png" width="45" height="45"/>
+        <image name="tab_4_on.png" width="45" height="45"/>
+        <image name="tab_5_on.png" width="45" height="45"/>
+    </resources>
+    <color key="tintColor" red="0.3803921569" green="0.070588235289999995" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+</document>

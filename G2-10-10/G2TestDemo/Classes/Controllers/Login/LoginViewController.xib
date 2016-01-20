@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
+            <connections>
+                <outlet property="LoginView" destination="H2D-B0-ZSt" id="9e7-fC-VGa"/>
+                <outlet property="denglu" destination="uLd-JP-jfq" id="pb9-aI-OY4"/>
+                <outlet property="headerImage" destination="OLg-nY-Yyv" id="UjP-gt-v8Q"/>
+                <outlet property="juhua" destination="OwX-5P-Ha0" id="MVv-cV-6nN"/>
+                <outlet property="mima" destination="Rpv-qe-YH5" id="6b7-wq-z4N"/>
+                <outlet property="mimaView" destination="0mk-Se-5Ot" id="ugO-By-qQv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="zhanghao" destination="JWy-KV-OWN" id="MKO-Tj-Z7x"/>
+                <outlet property="zhanghaoView" destination="qgX-dm-rLB" id="daQ-9p-JxM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dengluye" id="0zK-Uv-fCT">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <animations/>
+                </imageView>
+                <view contentMode="scaleToFill" id="H2D-B0-ZSt">
+                    <rect key="frame" x="336" y="92" width="352" height="412"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hlklogo" id="OLg-nY-Yyv">
+                            <rect key="frame" x="114" y="22" width="125" height="165"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uLd-JP-jfq">
+                            <rect key="frame" x="16" y="358" width="320" height="60"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="登 录">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="dengluChick:" destination="-1" eventType="touchUpInside" id="vFh-wI-K0j"/>
+                            </connections>
+                        </button>
+                        <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="white" id="OwX-5P-Ha0" userLabel="菊花">
+                            <rect key="frame" x="121" y="377" width="20" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                        </activityIndicatorView>
+                        <view contentMode="scaleToFill" id="qgX-dm-rLB">
+                            <rect key="frame" x="16" y="242" width="320" height="51"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="01" minimumFontSize="17" id="JWy-KV-OWN">
+                                    <rect key="frame" x="56" y="8" width="245" height="35"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <animations/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hlkuser" id="DX6-eR-PuE">
+                                    <rect key="frame" x="16" y="12" width="20" height="27"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <animations/>
+                                </imageView>
+                            </subviews>
+                            <animations/>
+                        </view>
+                        <view contentMode="scaleToFill" id="0mk-Se-5Ot">
+                            <rect key="frame" x="16" y="292" width="320" height="51"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="01" minimumFontSize="17" id="Rpv-qe-YH5">
+                                    <rect key="frame" x="55" y="8" width="236" height="33"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <animations/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                </textField>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hlklock" id="Hpg-mS-PU2">
+                                    <rect key="frame" x="16" y="12" width="20" height="26"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <animations/>
+                                </imageView>
+                            </subviews>
+                            <animations/>
+                        </view>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <point key="canvasLocation" x="399" y="219"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dengluye" width="2048" height="1536"/>
+        <image name="hlklock" width="38" height="52"/>
+        <image name="hlklogo" width="270" height="370"/>
+        <image name="hlkuser" width="38" height="52"/>
+    </resources>
+</document>
